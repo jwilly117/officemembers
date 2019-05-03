@@ -1,26 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+//Import both react and the Game itself from the game folder
+//Game is a compilation of components, it keeps things organized. 
+import React from "react";
+import Game from "./components/Game";
 
+
+//Here we return the Entirity of the game functionality, with all of its components and functionality (hopefully)
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <Game />;
 }
 
+//Export Said app for use in index
 export default App;
